@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="731.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplikasitoko.controller.ProdukController">
+    <children>
+        <TableView fx:id="tabel_produk" layoutX="26.0" layoutY="26.0" prefHeight="430.0" prefWidth="680.0">
+            <columns>
+                <TableColumn fx:id="kode_barang" prefWidth="49.0" text="Kode" />
+                <TableColumn fx:id="nama_barang" prefWidth="120.0" text="Nama Barang" />
+                <TableColumn fx:id="kategori" prefWidth="100.0" text="Kategori" />
+                <TableColumn fx:id="harga_jual" prefWidth="83.0" text="Harga Jual (Satuan)" />
+                <TableColumn fx:id="harga_jual_grosir" minWidth="0.0" prefWidth="76.0" text="Harga Jual (Grosir)" />
+                <TableColumn fx:id="pajak_barang" prefWidth="53.0" text="Tax" />
+            <TableColumn fx:id="satuan_barang" maxWidth="142.0" minWidth="0.0" prefWidth="60.0" text="Satuan" />
+                <TableColumn fx:id="keterangan_barang" prefWidth="138.0" text="Keterangan" />
+            </columns>
+        </TableView>
+        <Button fx:id="edit_produk" layoutX="323.0" layoutY="477.0" mnemonicParsing="false" onAction="#edit_produk_action"  prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #3098cc;" text="Edit" textFill="WHITE" />
+        <Button fx:id="hapus_produk" layoutX="419.0" layoutY="477.0" mnemonicParsing="false" onAction="#hapus_produk_action" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #3098cc;" text="Hapus" textFill="WHITE" />
+        <Button fx:id="tambah_produk" layoutX="227.0" layoutY="477.0" mnemonicParsing="false" onAction="#tambah_produk_action" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #3098cc;" text="Tambah" textFill="WHITE" />
+    </children>
+</AnchorPane>
